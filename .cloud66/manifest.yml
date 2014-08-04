@@ -1,20 +1,16 @@
-development:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
-staging:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
 production:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony                
+  rails:
+    servers:
+      server:
+        unique_name: 'frontend1'
+        vendor: 'digitalocean'
+        region: '4'
+        size: '62'
+    configuration:
+      extra_packages: 
+        - atop
+        - chrony
+  mysql:
+    servers:
+      server:
+        same_as: 'frontend1'
