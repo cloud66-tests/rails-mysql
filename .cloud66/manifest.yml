@@ -1,19 +1,19 @@
 production:
   rails:
     servers:
-      server:
-        unique_name: 'rails1'
-        vendor: 'digitalocean'
-        region: '4'
-        size: '65'
+      - server:
+          unique_name: 'rails1'
+          vendor: 'digitalocean'
+          region: '4'
+          size: '65'
     configuration:
       extra_packages: 
         - atop
         - chrony
   mysql:
     servers:
-      server:
-        unique_name: 'mysql1'
-        vendor: 'digitalocean'
-        region: '4'
-        size: '65'
+      - server:
+          unique_name: 'mysql1'
+          vendor: 'digitalocean'
+          region: '4'
+          size: '65'
