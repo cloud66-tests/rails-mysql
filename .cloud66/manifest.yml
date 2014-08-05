@@ -2,7 +2,7 @@ production:
   rails:
     servers:
       server:
-        unique_name: 'frontend1'
+        unique_name: 'railsmysql1'
         vendor: 'digitalocean'
         region: '4'
         size: '62'
@@ -13,4 +13,4 @@ production:
   mysql:
     servers:
       server:
-        same_as: 'frontend1'
+        same_as: 'railsmysql1'
