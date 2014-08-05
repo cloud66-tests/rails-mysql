@@ -2,10 +2,10 @@ production:
   rails:
     servers:
       server:
-        unique_name: 'railsmysql1'
+        unique_name: 'rails1'
         vendor: 'digitalocean'
         region: '4'
-        size: '62'
+        size: '65'
     configuration:
       extra_packages: 
         - atop
@@ -13,4 +13,7 @@ production:
   mysql:
     servers:
       server:
-        same_as: 'railsmysql1'
+        unique_name: 'mysql1'
+        vendor: 'digitalocean'
+        region: '4'
+        size: '65'
