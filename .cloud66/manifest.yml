@@ -3,9 +3,9 @@ production:
     servers:
       - server:
           unique_name: 'rails1'
-          vendor: 'digitalocean'
-          region: '4'
-          size: '65'
+          vendor: 'aws'
+          region: 'us-east-1'
+          size: 'm1.medium'
     configuration:
       extra_packages: 
         - atop
@@ -14,6 +14,6 @@ production:
     servers:
       - server:
           unique_name: 'mysql1'
-          vendor: 'digitalocean'
-          region: '4'
-          size: '65'
+          vendor: 'aws'
+          region: 'us-east-1'
+          size: 'm1.medium'
