@@ -5,7 +5,7 @@ production:
           unique_name: 'rails1'
           vendor: 'aws'
           region: 'us-east-1'
-          size: 'm1.medium'
+          size: 'm3.medium'
     configuration:
       extra_packages: 
         - atop
@@ -16,4 +16,4 @@ production:
           unique_name: 'mysql1'
           vendor: 'aws'
           region: 'us-east-1'
-          size: 'm1.medium'
+          size: 'm3.medium'
