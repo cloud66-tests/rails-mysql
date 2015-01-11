@@ -4,8 +4,8 @@ production:
       - server:
           unique_name: 'rails1'
           vendor: 'digitalocean'
-          region: '4'
-          size: '62'
+          region: 'nyc2'
+          size: '2gb'
     configuration:
       extra_packages: 
         - atop
@@ -15,5 +15,5 @@ production:
       - server:
           unique_name: 'mysql1'
           vendor: 'digitalocean'
-          region: '4'
-          size: '62'
+          region: 'nyc2'
+          size: '2gb'
